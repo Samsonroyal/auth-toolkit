@@ -1,6 +1,4 @@
-const DashboardPage = async () => {
-    const users = await fetch('/api/users');
-   
+const DashboardPage = async () => {   
     return <div>
         Hello! welcome to the dashboard page
         

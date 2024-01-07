@@ -24,7 +24,7 @@ export default function Home() {
        🔐Hello Auth !
         </h1> 
         <p className="text-white text-lg">A simple authentication service</p>
-        <LoginButton >
+        <LoginButton asChild>
         <Button variant="secondary" size="lg" >Sign In</Button>
         </LoginButton>
        
