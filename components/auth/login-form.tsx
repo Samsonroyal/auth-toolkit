@@ -52,12 +52,12 @@ export const LoginForm = () => {
         .then((data) => {
           if (data?.error) {
             form.reset();
-            setError(data.error);
+            setError(data?.error);
           }
 
           if (data?.success) {
             form.reset();
-            setSuccess(data.success);
+            setSuccess(data?.success);
           }
 
           if (data?.twoFactor) {
@@ -158,7 +158,7 @@ export const LoginForm = () => {
             type="submit"
             className="w-full"
           >
-            {showTwoFactor ? "Confirm" : "Login"}
+            {showTwoFactor? "Confirm" : "Login"}
           </Button>
         </form>
       </Form>
